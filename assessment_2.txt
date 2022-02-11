@@ -1,0 +1,71 @@
+Q1.
+val sFormat="https://www.google.com"
+val RevAndUpp=sFormat.reverse.toUpperCase()
+
+Q2.
+val donutName = "Vanilla Donut"
+val quantitypurchased=10
+val price=2.50
+val donutJson=
+     | s"""
+     | {
+     | "donut_name":"$donutName",
+     | "quantity_purchased":"$quantitypurchased".
+     | "price":$price
+     | }
+     | """.stripMargin
+
+Q3.
+import scala.io.StdIn._
+val name=readLine("Name is:")
+val age=readInt()
+print("Name:")
+print(name)
+println("Age:")
+print(age)
+
+Q4.
+val str="https://www.google.com"
+val pos=str.charAt(7)
+println(s"The 8th character literal in $str=$pos")
+
+
+Q5.
+val donuts= "Glazed Donuts"
+val itemcost=2.5
+val quantity=10
+val total=quantity*itemcost
+println(s"Total cost of $quantity $donuts = $total")
+
+Q6.
+import scala.io.StdIn._
+val favourite=readLine("What is your favourite movie of all time?")
+println(s"$favourite is totally awesome!")
+
+Q7.
+object coup
+{
+def main(args:Array[String])
+{
+val coupon=Array("A","BB","CCC","DDDD","EEEEE")
+var count:Int=0
+while(count<coupon.size)
+{
+var coup=coupon(count)
+var change=coupon(count).length
+println(s"$coup - $change")
+count=count+1 
+}
+}
+}
+
+Q8.
+import scala.collection.mutable.ListBuffer
+var sum=ListBuffer[Int]()
+var n=100
+while(n!=150){
+|sum +=n
+|n+=10
+|}
+println(sum)
+val result:lst.sum
